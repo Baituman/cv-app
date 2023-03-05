@@ -1,0 +1,105 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+header {
+
+    height: 15%;
+    
+}
+
+.header-container{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2em;
+    gap: 2em;
+}
+
+.logo-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.foto img{
+
+    height: 150px;
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding:  0;
+}
+
+.title-wrapper {
+
+    display: grid;
+    grid-template-columns: repeat (1fr);
+}
+
+.name-wrapper {
+    text-align: center;
+    font-size: 2em;
+}
+
+.perfil-wrapper {
+    text-align: justify;
+    font-size: 1.5em;
+    padding-left: 2em;
+    padding-right: 1.5em;
+}
+
+.glovo {
+    background-color: darkgray;
+    border-radius: 15px;
+    padding: 0.2em 2em ;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    gap: 3em;
+}
+
+.main-info {
+    margin-left: 3em;
+    
+}
+
+.formacion, .experiencia {
+    margin-left: 2em;
+}
+
+.extra-info {
+    font-size: 0.75em;
+    padding: 0 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.title {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: gray;
+    border-radius: 15px;
+}
+
+.comPersonal{
+    text-align: center;
+}
+
+.footer-container{
+    height: 15%;
+    background-color: darkgrey;
+}
+
