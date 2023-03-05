@@ -106,9 +106,10 @@ ul {
 
 @media screen (max-width: 768px) {
 
-    .main-container{
-        display: flex;
-        flex-direction: column;
+    .body-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
         
     }
     
