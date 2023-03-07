@@ -37,6 +37,10 @@ ul {
     padding:  0;
 }
 
+.fecha{
+    text-align: center;
+}
+
 .title-wrapper {
 
     display: grid;
@@ -98,13 +102,37 @@ ul {
     text-align: center;
 }
 
+.levelBar-idioma{
+
+    background-color: #fff;
+    height: 0.5em;
+    
+}
+
+#idiomas-wrapper{
+
+    padding-bottom: 1em;
+}
+
+#comDigitales-wrapper{
+
+    padding-bottom: 1em;
+}
+
+.levelBar-com{
+
+    background-color: #fff;
+    height: 0.5em;
+    
+}
+
 .footer-container{
     height: 15%;
     background-color: darkgrey;
 }
 
 
-@media screen (max-width: 768px) {
+@media (max-width: 768px) {
 
     .body-container{
         display: grid;

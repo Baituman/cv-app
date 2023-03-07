@@ -5,7 +5,7 @@ let estudios = {
     curso: "EGB",
     centro: "El Pilar",
     lugar: "Bilbao",
-    final: 1992,
+    fecha: 1992,
     database: []
 }
 
@@ -114,7 +114,7 @@ function viewEduc(estudio){
     datosFormacion.className = "educ-data";
     datosFormacion.innerHTML = 
             estudio.centro + ", " + estudio.lugar +"<br />"
-            + estudio.final;
+            + estudio.fecha;
 
     formacion.append(titleEduc);
     formacion.append(datosFormacion);
@@ -144,7 +144,7 @@ function viewTrabajo(trabajo){
     fechaExperiencia.className = "exp-date";
     fechaExperiencia.innerHTML = 
             trabajo.desde + " / " + trabajo.hasta + "<br />"
-            + trabajo.descripcion ? trabajo.descripcion : "";
+            + (trabajo.descripcion && trabajo.descripcion.length > 0 ? trabajo.descripcion : "");
 
     experiencia.append(titleExp);
     experiencia.append(datosExperiencia);
@@ -167,9 +167,14 @@ function viewIdioma(idioma){
     titleIdioma.innerText = idioma.idioma;
 
     let levelBar = document.createElement("div");
-    levelBar.className = "levelBar-idioma";
-    idioma.nivel == NaN ? levelBar.innerHTML = idioma.nivel :
-    levelBar.style = "width: "+idioma.nivel+"em;";
+    if(idioma.nivel == "Nativo" ){
+        levelBar.style.fontSize= "1.5em"
+        levelBar.innerHTML = idioma.nivel;
+    }else {
+        levelBar.className = "levelBar-idioma";
+        levelBar.style.width =((100 / 5) * idioma.nivel)+"%";
+    }
+    
                                       
 
     lenguaje.append(titleIdioma);
@@ -242,7 +247,7 @@ function viewcomDig(competencia){
 
     let levelBar = document.createElement("div");
     levelBar.className = "levelBar-com";
-    levelBar.style = "width: " + competencia.nivel + "em;";
+    levelBar.style.width = ((100 / 5) * competencia.nivel)+"%";
 
     comDigital.append(titleComDig);
     comDigital.append(datosComDig);
