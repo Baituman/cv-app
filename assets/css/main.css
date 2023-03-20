@@ -57,10 +57,10 @@ ul {
 }
 
 .name-wrapper > img {
-    width: 100%;
+    
     padding: 1em;
     border-radius: 50px;
-    box-shadow: 1em -1em 1em grey;
+    
     
     
 }
@@ -70,7 +70,8 @@ ul {
     
     padding-left: 2em;
     padding-right: 1.5em;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Bungee', cursive;
+   
     display: flex column;
     align-items: center;
     
@@ -89,12 +90,13 @@ ul {
     padding-left: 2em;
     padding-right: 1.5em;
     gap: 3em;
-    box-shadow: 1em 1em 1em grey;
+    
+    margin-bottom: 2em;
 }
 
 .main-info {
     margin-left: 3em;
-    
+    box-shadow: -1em 1em 1em grey;
 }
 
 .formacion, .experiencia {
@@ -107,6 +109,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    margin-bottom: 2em;
 }
 
 .title {
@@ -213,16 +216,48 @@ ul {
 
 @media print {
 
-    body{
+    .body-container{
      height: 29.7cm;
      width: auto;
     }
     
-    .body-container{
-        display: grid;
-        grid-template-columns: repeat (1fr);
+    .header-container{
+        display: flex;
         
-                
+        justify-content: center;
+        
+    }
+
+    .logo-wrapper{
+
+        padding-left: 1em;
+    }
+
+    .main-container{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+        box-shadow: none;
+        
+               
+    }
+    .main-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+        
+        
+               
+    }
+    .extra-info{
+        padding: 0 0.5em;
+        
     }
 
    
