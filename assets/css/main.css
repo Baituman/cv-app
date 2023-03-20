@@ -24,6 +24,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
+    box-shadow: -1em -1em 1em grey;
 }
 
 .foto img{
@@ -48,21 +49,37 @@ ul {
 }
 
 .name-wrapper {
-    text-align: center;
-    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.name-wrapper > img {
+    width: 100%;
+    padding: 1em;
+    border-radius: 50px;
+    box-shadow: 1em -1em 1em grey;
+    
+    
 }
 
 .perfil-wrapper {
     text-align: justify;
-    font-size: 1.5em;
+    
     padding-left: 2em;
     padding-right: 1.5em;
+    font-family: 'Press Start 2P', cursive;
+    display: flex column;
+    align-items: center;
+    
 }
 
 .glovo {
     background-color: darkgray;
     border-radius: 15px;
     padding: 0.2em 2em ;
+    padding-top: 1em;
 }
 
 .main-container{
@@ -71,6 +88,7 @@ ul {
     padding-left: 2em;
     padding-right: 1.5em;
     gap: 3em;
+    box-shadow: 1em 1em 1em grey;
 }
 
 .main-info {
