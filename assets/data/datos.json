@@ -200,7 +200,7 @@
     "comDigitales" : [ 
 {
     "ambito": "Lenguajes de programacion",
-    "competencia": "HTML5, CSS3, Js, PHP, jQuery, SQL",
+    "competencia": "HTML5, CSS3, JavaScript, PHP, jQuery, SQL",
     "nivel": 3,
     "database": []
 }
