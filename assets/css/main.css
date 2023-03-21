@@ -97,6 +97,9 @@ ul {
 .main-info {
     margin-left: 3em;
     box-shadow: -1em 1em 1em grey;
+    display: flex;
+    flex-direction: column-reverse;
+
 }
 
 .formacion, .experiencia {
@@ -169,6 +172,12 @@ ul {
     font-size: 2em;
 }
 
+.codigoQR-wrapper{
+
+    display: none;
+
+}
+
 
 @media (max-width: 768px) {
 
@@ -216,50 +225,64 @@ ul {
 
 @media print {
 
+    
+
     .body-container{
-     height: 29.7cm;
-     width: auto;
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     page-break-inside: avoid;
+     
+    }
+
+    .header-container{
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .main-container{
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        
+        
     }
     
-    .header-container{
-        display: flex;
-        
-        justify-content: center;
-        
-    }
-
-    .logo-wrapper{
-
-        padding-left: 1em;
-    }
-
-    .main-container{
-        display: flex;
-        
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2em;
-        box-shadow: none;
-        
-               
-    }
     .main-info{
+
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+                
+    }
+
+    .experiencia{
+
+        width: max-content;
+    }
+
+   
+
+    .data-container{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .codigoQR-wrapper{
+
+        display:flex;
         align-items: center;
         justify-content: center;
-        margin: 0;
-        box-shadow: none;
-        padding: 0;
-        
-        
-               
-    }
-    .extra-info{
-        padding: 0 0.5em;
         
     }
 
+    .codigoQR > img{
+
+        height: 550px;
+    }
+   
    
 }
 
