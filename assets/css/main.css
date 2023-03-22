@@ -68,16 +68,18 @@ ul {
 
 .perfil-wrapper {
     text-align: justify;
-    
     padding-left: 2em;
     padding-right: 1.5em;
     font-family: 'Oxygen', sans-serif;
-   font-weight: 600;
+    font-weight: 600;
     display: flex column;
     align-items: center;
-    
-    
+    font-size: 1.5em;
+        
 }
+
+
+
 
 .glovo {
     background-color: rgba(169, 169, 169, 0.5);
@@ -92,7 +94,6 @@ ul {
     padding-left: 2em;
     padding-right: 1.5em;
     gap: 3em;
-    
     margin-bottom: 2em;
 }
 
