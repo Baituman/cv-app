@@ -1,0 +1,64 @@
+@media print {
+
+    
+
+    .body-container{
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     page-break-inside: avoid;
+     
+    }
+
+    .header-container{
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .main-container{
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        
+        
+    }
+    
+    .main-info{
+
+        display: flex;
+        flex-direction: column-reverse;
+                
+    }
+
+    .experiencia{
+
+        width: max-content;
+    }
+
+   
+
+    .data-container{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .codigoQR-wrapper{
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .codigoQR > img{
+
+        height: 550px;
+    }
+   
+   
+}
+
+

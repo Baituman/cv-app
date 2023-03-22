@@ -47,18 +47,19 @@ ul {
 
     display: grid;
     grid-template-columns: repeat (1fr);
+    align-items: center;
 }
 
 .name-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     
     
 }
 
 .name-wrapper > img {
     
-    padding: 1em;
+    width: 80%;
     border-radius: 50px;
     
     
@@ -70,15 +71,16 @@ ul {
     
     padding-left: 2em;
     padding-right: 1.5em;
-    font-family: 'Bungee', cursive;
-   
+    font-family: 'Oxygen', sans-serif;
+   font-weight: 600;
     display: flex column;
     align-items: center;
+    
     
 }
 
 .glovo {
-    background-color: darkgray;
+    background-color: rgba(169, 169, 169, 0.5);
     border-radius: 15px;
     padding: 0.2em 2em ;
     padding-top: 1em;
@@ -99,6 +101,7 @@ ul {
     box-shadow: -1em 1em 1em grey;
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-evenly;
 
 }
 
@@ -220,70 +223,6 @@ ul {
         
     }
     
-}
-
-
-@media print {
-
-    
-
-    .body-container{
-     height: fit-content;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     page-break-inside: avoid;
-     
-    }
-
-    .header-container{
-
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
-    .main-container{
-
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        
-        
-    }
-    
-    .main-info{
-
-        display: flex;
-        flex-direction: column-reverse;
-                
-    }
-
-    .experiencia{
-
-        width: max-content;
-    }
-
-   
-
-    .data-container{
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .codigoQR-wrapper{
-
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    .codigoQR > img{
-
-        height: 550px;
-    }
-   
-   
 }
 
 
