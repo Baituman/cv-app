@@ -219,7 +219,7 @@ ul {
 
         padding-left: 1em;
         flex-direction: column;
-        flex: 0 auto;
+        flex-wrap: wrap;
     }
 
     .main-container{

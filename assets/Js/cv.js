@@ -52,7 +52,7 @@ function init(){
     // por lo que si llamaramos a la vista no veríamos nada ya que los datos no se habrían leído.
     // Por este motivo, la llamada a la vista está dentro de la función de abajo, esta función
     // se llama callback, y se va a ejecutar cuando la lectura haya terminado.
-    fetch('assets/data/datos.json')
+    fetch('../data/datos.json')
     .then((response) => response.json())
     .then((json) => {
         estudios.database = json.estudios;
