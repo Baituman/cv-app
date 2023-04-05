@@ -1,6 +1,246 @@
+.img-wrapper{
+    display: none;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+
+
+header {
+
+    height: 15%;
+    
+}
+
+.header-container{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2em;
+    gap: 2em;
+}
+
+.logo-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    box-shadow: -1em -1em 1em grey;
+    padding-left: 1em;
+}
+
+.foto img{
+
+    height: 150px;
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding:  0;
+}
+
+.fecha{
+    text-align: center;
+}
+
+.title-wrapper {
+
+    display: grid;
+    grid-template-columns: repeat (1fr);
+    align-items: center;
+}
+
+.name-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.name-wrapper > img {
+    
+    width: 80%;
+    border-radius: 50px;
+    
+    
+    
+}
+
+.perfil-wrapper {
+    text-align: justify;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
+    display: flex column;
+    align-items: center;
+    font-size: 1.5em;
+        
+}
+
+
+
+
+.glovo {
+    background-color: rgba(169, 169, 169, 0.5);
+    border-radius: 15px;
+    padding: 0.2em 2em ;
+    padding-top: 1em;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    gap: 3em;
+    margin-bottom: 2em;
+}
+
+.main-info {
+    margin-left: 3em;
+    box-shadow: -1em 1em 1em grey;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+
+}
+
+.formacion, .experiencia {
+    margin-left: 2em;
+}
+
+.extra-info {
+    font-size: 0.75em;
+    padding: 0 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.title {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: gray;
+    border-radius: 15px;
+}
+
+.comPersonal{
+    text-align: center;
+}
+
+.levelBar-idioma{
+
+    background-color: #fff;
+    height: 0.5em;
+    
+}
+
+#idiomas-wrapper{
+
+    padding-bottom: 1em;
+}
+
+.curso-data{
+    font-size: 1.5em;
+}
+
+#comDigitales-wrapper{
+
+    padding-bottom: 1em;
+}
+
+.comDig-data{
+    font-size: 1.5em;
+}
+
+.levelBar-com{
+
+    background-color: #fff;
+    height: 0.5em;
+    
+}
+
+.footer-container{
+    height: 20%;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-wrapper {
+
+    font-size: 2em;
+}
+
+.codigoQR-wrapper{
+
+    display: none;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .logo-wrapper{
+
+        padding-left: 1em;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+        box-shadow: none;
+        
+               
+    }
+    .main-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+        
+        
+               
+    }
+    .extra-info{
+        padding: 0 0.5em;
+        
+    }
+    
+}
+
+
+
+
+
 @media print {
 
-    
+    #includedNavbar{
+        display: none;
+    }
 
     .body-container{
      height: fit-content;
