@@ -46,13 +46,15 @@ let idiomas = {
 }
 
 function init(){
+    const url_web = "/cv-app/";
+
     
     // leemos los datos, hay que tener en cuenta que esta llamada, 
     // fetch, es asyncrona, eso quiere decir que la ejecución continua sin esperar respuesta
     // por lo que si llamaramos a la vista no veríamos nada ya que los datos no se habrían leído.
     // Por este motivo, la llamada a la vista está dentro de la función de abajo, esta función
     // se llama callback, y se va a ejecutar cuando la lectura haya terminado.
-    fetch('../data/datos.json')
+    fetch(url_web+'assets/data/datos.json')
     .then((response) => response.json())
     .then((json) => {
         estudios.database = json.estudios;

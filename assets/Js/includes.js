@@ -1,6 +1,8 @@
 //Includes function
 
+const url_web = "/cv-app/";
+
 $(function(){
-    $("#includedNavbar").load("../../includes/navBar.html");
+    $("#includedNavbar").load(url_web+"includes/navBar.html");
 
 })

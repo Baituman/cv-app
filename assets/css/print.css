@@ -32,6 +32,7 @@ header {
     font-size: 1.5em;
     box-shadow: -1em -1em 1em grey;
     padding-left: 1em;
+    background-image: none;
 }
 
 .foto img{
