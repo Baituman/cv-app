@@ -32,10 +32,7 @@ header {
     font-size: 1.5em;
     box-shadow: -1em -1em 1em grey;
     padding-left: 1em;
-    background-image: url("../images/fondoRontegui.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
     height: 20em;
     padding-top: 3em;
     position:sticky;
@@ -43,7 +40,7 @@ header {
     
 }
 
-.foto img{
+.foto{
 
     height: 150px;
     border-radius: 50%;
@@ -51,10 +48,12 @@ header {
 
 .descripcion{
 
-    background-color: rgba(239, 239, 250, 0.4);
+    background-color: rgba(239, 239, 250, 0.6);
     padding: 1em;
     border-radius: 1em;
-    color: #262829;
+    color: #080808;
+    font-weight: 900;
+    text-shadow: #d3c2c2;
 }
 
 ul {

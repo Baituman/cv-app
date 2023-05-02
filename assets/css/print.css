@@ -238,7 +238,7 @@ ul {
 
 @media print {
 
-    #includedNavbar{
+    #printableNavbar{
         display: none;
     }
 

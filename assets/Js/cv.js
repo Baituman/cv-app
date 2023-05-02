@@ -52,7 +52,7 @@ function init(){
     // por lo que si llamaramos a la vista no veríamos nada ya que los datos no se habrían leído.
     // Por este motivo, la llamada a la vista está dentro de la función de abajo, esta función
     // se llama callback, y se va a ejecutar cuando la lectura haya terminado.
-    fetch('../data/datos.json')
+    fetch('/assets/data/datos.json')
     .then((response) => response.json())
     .then((json) => {
         estudios.database = json.estudios;
@@ -235,18 +235,18 @@ function viewcomDig(competencia){
     
 
     let comDigital = document.createElement("div");
-    comDigital.className = "comDigital";
+    comDigital.className = "comDigital card";
 
     let titleComDig = document.createElement("h2");
-    titleComDig.className = "comDig-title";
+    titleComDig.className = "comDig-title card-title";
     titleComDig.innerText = competencia.ambito;
 
     let datosComDig = document.createElement("p");
-    datosComDig.className = "comDig-data";
+    datosComDig.className = "comDig-data card-body";
     datosComDig.innerHTML = competencia.competencia;
 
     let levelBar = document.createElement("div");
-    levelBar.className = "levelBar-com";
+    levelBar.className = "levelBar-com card-footer";
     levelBar.style.width = ((100 / 5) * competencia.nivel)+"%";
 
     comDigital.append(titleComDig);
