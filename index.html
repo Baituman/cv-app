@@ -1,133 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/da18abb0d3.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet"> 
-    <script src="assets/Js/includes.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    
-    <title>Aketza Quintana</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/da18abb0d3.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/melancholy-serif" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <style>
+
+  </style>
+
+  <title>Aketza Quintana</title>
 </head>
-<body onload="init();">
-    <div class="body-container">
 
-     <div id="includedNavbar"></div>
+<body onload="init()">
 
-     
-     <div class="card mb-3 border-light sticky-top" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="assets/images/foto_borrador_cv.png" class="img-fluid rounded-start foto" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Web Developer</h5>
-              <ul>
-                <li><i class="fa-regular fa-envelope"></i>  aketzaq@gmailcom</li>
-                <li><i class="fa-solid fa-phone"></i>  610 910 769</li>
-                <li><i class="fa-solid fa-house"></i>  Bilbao, Spain</li>
+  <nav class="navbar navbar-expand-lg text-warning bg-dark">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/main-title.png" class="img-fluid" alt="Rubrica">
+      </a>
+      <button class="navbar-toggler btn btn-warning bg-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link link-warning active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-success" href="#">Printable</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-primary" href="#">Full CV</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link link-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Skills Overview
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-                <p class="card-text"><small class="text-body-secondary">Fecha / Lugar de Nacimiento
-                    <ul >
-                        <li><i class="fa-solid fa-person"></i>  31/05/1976, Bilbao</li>
-                        
-                    </ul></small></p>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+
+
+
+
+
+  <section id="info">
+
+
+    <div class="row rounded bg-warning">
+      <div class="col-md-4 text-center">
+        <img src="assets/images/foto_borrador_cv.png" class="img-fluid rounded-circle w-75 p-3 shadow-lg" alt="">
+
+        <div id="contacto" class="accordion-item mt-4 d-flex flex-column justify-content-center direction-column">
+          <div class="accordion-header container-fluid">
+            <button class="accordion-button  dropdown-toggle text-success fs-4 collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-datos" aria-expanded="false"
+              aria-controls="flush-collapseTwo">
+              Datos de Contacto
+            </button>
+          </div>
+          <div id="flush-collapseTwo-datos" class="accordion-collapse collapse" data-bs-parent="#contacto">
+            <div class="accordion-body fs-2">
+              <ul>
+                <li><i class="fa-regular fa-envelope"></i> aketzaq@gmailcom</li>
+                <li><i class="fa-solid fa-phone"></i> 610 910 769</li>
+                <li><i class="fa-solid fa-house"></i> Bilbao, Spain</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="blockquote mb-0 p-5">
+          <p class="text-center text-muted">No es el más fuerte, ni el más inteligente el que sobrevive si no el que se
+            adapta mejor al cambio</p>
+          <footer class="footer d-flex justify-content-center mt-2">
+
+          </footer>
+          <cite title="Source Title text-end">- Charles Darwin</cite>
+        </div>
+      </div>
+      <div class="col-md-8 d-flex justify-content-center align-items-center ">
+        <div class="container-fluid  mr-3  p-2 text-center p-5" id="ongi-etorri">
+          <h1 class="card-title display-5 mb-5"> Kaixo! Ongi etorri</h1>
+          <p class=" fs-5 p-5">
+            Seguramente has llegado aqui, porque he solicitado formar parte de tu equipo,
+            así que un placer tener la oportunidad de que así sea.
+
+          </p>
+          <p class="fs-5">
+            Con más de veinte años de experiencia en hostelería, decido dar un nuevo rumbo a mi vida
+            y dedicarme a mi otra pasión: Las nuevas tecnologías. <br>
+            Todo camino tiene un principio, y aquí comienza el mio, con la ventaja de una amplia experiencia Laboral
+            y la ilusión de implicarme y aprender en nuevos proyectos. <br>
+            Ambicioso y con formación
+            en distintos ambitos, busco un puesto
+            en el que pueda utilizar mejor mis
+            habilidades y mi pasión. Tecnológicamente hábil, ofrezco experiencia con muchas plataformas
+            de medios sociales, programas de tecnología ofimatica y habilidades informáticas avanzadas.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- end info -->
+
+  <section id="tldr" class="sticky-top">
+
+
+    <div class="container bg-secondary justify-content-center align-items-center p-3 ">
+
+      <div class="accordion accordion-flush " id="accordionFlushContacto">
+        <div class="accordion-item  ">
+          <h2 class="accordion-header ">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne-datos" aria-expanded="false" aria-controls="flush-collapseOne">
+              TLDR
+            </button>
+          </h2>
+          <div id="flush-collapseOne-datos" class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushContacto">
+            <div class="accordion-body">
+              <p>Con amplia experiencia en el sector de la hostelería,
+                he desempeñado todas las labores habidas en el sector, tanto de operario como en puestos de
+                responsabilidad,
+                lo que me ha aportado gran capacidad de adaptación, gestión y trabajo en equipo, autonomía y liderazgo.
+                <br>
+                La implicación y esfuerzo me aportaron un gran crecimiento y desarrollo profesional que por
+                circunstancias sociales se vieron afectados. <br>
+                Emprendedor y luchador, durante la pandemia desarrollé mi actividad como repartidor en correos express
+                durante casi 3 años siendo entonces
+                cuando decido reciclarme y obtener la certificación de Desarrollador de aplicaciones en el entorno web.
+                <br>
+                Cabe destacar, que a lo largo de toda esta trayectoria se han realizado formaciones tanto en redes como
+                en sistemas
+                entre otros, que junto con el curso ya mencionado, me aportan el suficiente conocimiento para
+                incorporarme
+                en el sector tecnológico donde seguir desarrollándome y aportar los conocimientos y experiencias de la
+                profesionalidad adquirida a lo largo de los años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo-datos" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Competencias Profesionales
+            </button>
+          </h2>
+          <div id="flush-collapseTwo-datos" class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushContacto">
+            <div class="accordion-body">
+              <p>Mi dilatada experiencia laboral, me aporta principalmente solidez en los valores profesionales.
+                <br> Haber desarrollado mi trayectoria desde la base, me ha enseñado la importancia del esfuerzo y la
+                responsabilidad, el valor de cada uno de los integrantes del equipo y la capacidad de superarse cada
+                día.
+                <br> Durante mi crecimiento profesional, he ido adquiriendo dotes organizativas, analíticas y de
+                liderazgo,
+                apostando siempre por el trabajo en equipo y potenciando su desarrollo.
+                <br> Con buen trato hacia el cliente, autónomo y resolutivo, las distintas situaciones vividas, me
+                aportan la experiencia para ofrecer soluciones
+                rápidas, adaptándome facilmente a las circunstancias.
+                <br> Emprendedor y de mente inquieta, he disfrutado de nuevos retos y proyectos con ilusión y ganas de
+                aprender cada día.
+                Acotumbrándome a trabajar bajo presión y por objetivos, he aportado constancia y esfuerzo, buscando
+                siempre los mejores resultados.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree-datos" aria-expanded="false" aria-controls="flush-collapseThree">
+              Competencias Digitales
+            </button>
+          </h2>
+          <div id="flush-collapseThree-datos" class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushContacto">
+            <div class="accordion-body">
+              <p>A pesar de no disponer apenas de experiencia profesional en el sector, la informática siempre ha
+                formado
+                parte de mi vida. Desde que nació el spectrum, he disfrutado de la evolución que ha tenido la
+                tecnología,
+                <br> A lo largo de todos estos años he realizado diversos cursos tanto de ofimática, como de gestión,
+                sistemas,
+                redes, o este último de desarrollo de aplicaciones web. <br> Todo ello me ha aportado la capacidad de
+                desenvolverme
+                facilmente en cualquier entorno digital.
+                <br> Además, y de forma autodidacta, he ido ampliando y poniendo en práctica mis conocimientos dentro de
+                distintos ámbitos.
+                <br> Me desenvuelvo perfectamente en los entornos de windows y Linux.
+                <br> Tengo conocimientos en infraestructuras de red, empaquetado de datos y sus protocolos
+                <br> Desde que cursé diseño de páginas web en el año 2002, he desarrollado varios entornos a nivel
+                personal,
+                por lo que aunque artísticamente torpe, me desenvuelvo bien en el front-end y en el uso de CMS como
+                Joomla o wordpress.
+                También he utilizado profesionalmente Odoo, por lo que manejo bastante bien sus utilidades.
+                <br> Dentro del Cloud computing, he adquirido ciertas nociones en Iaas, Paas y Saas con formaciones a
+                través de Azure como son docker, kubernetes o Diseño de soluciones de infraestructura. <br> También he
+                tenido experiencia con deployments
+                de aplicaciones en plataformas como Heroku y Amazon Web Services, desarrollando en esta última mi último
+                proyecto profesional en prácticas.
+                <br>Además del entorno de NodeJs, tengo nociones en frameworks como JQuery, React, Amplify o Laravel y
+                he utilizado
+                herramientas como bootstrap o Gulp y Git para el control de revisiones o proyectos colaborativos.
+                <br>En el back-end, me desenvuelvo tanto en php como en javascript así como en el uso de ExpressJs,
+                Xampp y en la gestión de bases de datos relacionales.
+                <br> En cuanto al servidor, he realizado configuraciones principalmente en Linux, de los servicios de
+                Apache y Nginx,
+                así como de las conexiones ssh y los permisos de seguridad y acceso.
+                <br> Y cuanto más aprendes, te das cuenta de que menos sabes, por lo que cada día llevo el código
+                conmigo e intento
+                ampliar mis conocimientos y enfrentarme a nuevos retos.
+
+
+
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-<div class="container-fluid ">
-    <div class="container-md">
-        <div class="logo-wrapper container-fluid sticky">
-           
-            <h2>Perfil Profesional</h2>
-            <div>
-                <p>Profesional ambicioso y con formación 
-                    en distintos ambitos, que busca un puesto
-                     en el que pueda utilizar mejor mis
-                      habilidades y mi pasión. Tecnológicamente hábil, ofrezco experiencia con muchas plataformas
-                       de medios sociales, programas de tecnología ofimatica y habilidades informáticas avanzadas.
-                </p>
-            </div>
-        
-        </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-    
-<section class="main-container">
-    <div class="main-info">
-    <div class="data-container">
-        <div id="formacion-wrapper">
-            <h2 class="glovo">Datos Académicos</h2>
-        </div>
-            <div class="codigoQR-wrapper">
-                <div class="codigoQR">
-                    <img src="assets/images/codigoQR.png" alt="codigo QR">
-                </div>
-            </div>
-        
-    </div>
-        <div id="experiencia-wrapper">
-            <h2 class="glovo">Experiencia Profesional</h2>
-        </div>
-    </div>
-    <div class="extra-info">
-        <div id="idiomas-wrapper" class="glovo">
-            <h2 class="title">IDIOMAS</h2>
-        </div>
-        <div id="cursos-wrapper" class="glovo">
-            <h2 class="title">CURSOS</h2>
-        </div>
-        <div class="competencias-wrapper glovo">
-<!--------  <h2 class="title">COMPETENCIAS</h2>  --->
-            <div id="comPersonales-wrapper" >
-                <h3 class="title">HABILIDADES PERSONALES</h3>
-            </div>
-            <div id="comDigitales-wrapper" >
-                <h3 class="title">COMPETENCIAS DIGITALES</h3>
-            </div>
-
-        </div>
     </div>
 
-</section>
-<footer>
-<div class="footer-container">
-    
-    <div class="social-wrapper">
 
-        <a href="https://github.com/baituman">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/aketza">
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- End TLDR-->
+
+
+  <section id="navigation" class="m-5 text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <div id="idiomas-wrapper" class="container mb-3">
+
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-end mr-5">
+        <nav id="navbar-example2" class="navbar px-3 mb-3 ">
+
+          <ul class="nav nav-pills gap-5">
+            <li class="nav-item d-flex">
+              <a class="nav-link collapsed text-dark fs-4 border border-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour-habilidades" href="#flush-collapseFour-habilidades"
+                aria-expanded="false" aria-controls="flush-collapseThree">
+                Experiencia Laboral</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border text-dark fs-4 border-success" href="#scrollspyHeading2">Datos Académicos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark fs-4 btn border border-warning" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Otros Datos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Cursos</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Habilidades</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#scrollspyHeading5">Conocimientos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 " tabindex="0">
+
+      <div id="scrollspyHeading1" class="container-fluid d-flex justify-content-center  ">
+
+        <div id="experiencia-wrapper" class="row d-flex justify-content-between gap-5 m-5">
+
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-between">
+      <div id="scrollspyHeading5">
+        <div id="comDigitales-wrapper" class="row justify-content-center gap-3 m-3">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="row align-items-center mt-3">
+      <div class="col-md-7 ">
+        <div id="scrollspyHeading2">
+          <div id="formacion-wrapper">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 ">
+        <div id="scrollspyHeading3">
+          <div id="cursos-wrapper" class="container">
+          </div>
+        </div>
+      </div>
+      <div class="col-md col-10 mt-3">
+        <div id="scrollspyHeading4" >
+          <div id="comPersonales-wrapper" class="container d-flex gap-5 flex-wrap justify-content-center bg-warning rounded text-secondary">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- end TLDR -->
+
+
+
+
+
+  <footer class="footer">
+
+    <nav class="navbar ">
+      <div class="container-fluid justify-content-center display-4">
+        <div class="card-md bg-dark sticky-bottom rounded p-3">
+          <a href="https://github.com/baituman">
+            <i class="fa-brands fa-github text-warning"></i>
+          </a>
+          <a href="https://linkedin.com/in/aketza">
             <i class="fa-brands fa-linkedin"></i>
-        </a>       
-        <a href="https://github.com/baituman420">
-            <i class="fa-brands fa-github"></i>
-        </a>
+          </a>
+          <a href="https://github.com/baituman420">
+            <i class="fa-brands fa-github text-success"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </footer>
 
-    </div>
-</footer>
-</div>
-<script src="assets/Js/cv.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- end footer -->
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="cv.js"></script>
 </body>
+
 </html>
