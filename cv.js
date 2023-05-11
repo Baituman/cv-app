@@ -236,11 +236,11 @@ function viewComPer(competencia){
 
 function viewcomDig(competencia){
 
-    const lenguajes = competencia.lenguajes;
-    const herramientas = competencia.herramientas;
-    const gestion = competencia.gestion;
-    const sistemas = competencia.sistemas;
-    const cloud = competencia.cloud;
+    const {lenguajes} = competencia.lenguajes;
+    const {herramientas} = competencia.herramientas;
+    const {gestion} = competencia.gestion;
+    const {sistemas} = competencia.sistemas;
+    const {cloud} = competencia.cloud;
 
     
     for (var obj in competencia) {
