@@ -249,14 +249,14 @@ function viewcomDig(competencia){
        comDigital.className = "comDigital col-md-10 card d-flex flex-row flex-wrap p-3 gap-2 bg-dark text-warning";
 
        let titleComDig = document.createElement("h2");
-       titleComDig.className = "comDig-title card-title p-3";
+       titleComDig.className = "comDig-title card-title text-center p-3";
        titleComDig.innerHTML = obj;
        comDigital.append(titleComDig);
 
        if (obj == "Lenguajes"){
         lenguajes.forEach(lenguaje => {
             let datosComDig = document.createElement("div");
-            datosComDig.className = "comDig-data card-body border ";
+            datosComDig.className = "comDig-data card-body fs-5 border ";
             datosComDig.innerHTML = "<u>" + lenguaje.competencia + "</u>";
             
             let levelBar = document.createElement("div");
@@ -272,7 +272,7 @@ function viewcomDig(competencia){
        }else if (obj == "Herramientas"){
         herramientas.forEach(herramienta => {
             let datosComDig = document.createElement("div");
-            datosComDig.className = "comDig-data card-body border";
+            datosComDig.className = "comDig-data card-body fs-5 border";
             datosComDig.innerHTML = "<u>" + herramienta.competencia + "</u>";
             
             let levelBar = document.createElement("div");
@@ -288,7 +288,7 @@ function viewcomDig(competencia){
        }else if (obj == "Gestion"){
         gestion.forEach(item => {
             let datosComDig = document.createElement("div");
-            datosComDig.className = "comDig-data card-body border";
+            datosComDig.className = "comDig-data card-body fs-5 border";
             datosComDig.innerHTML = "<u>" + item.competencia + "</u>";
             
             let levelBar = document.createElement("div");
@@ -304,7 +304,7 @@ function viewcomDig(competencia){
        }else if (obj == "Sistemas"){
         sistemas.forEach(sistema => {
             let datosComDig = document.createElement("div");
-            datosComDig.className = "comDig-data card-body border";
+            datosComDig.className = "comDig-data card-body fs-5 border";
             datosComDig.innerHTML = "<u>" + sistema.competencia + "</u>";
             
             let levelBar = document.createElement("div");
@@ -320,7 +320,7 @@ function viewcomDig(competencia){
        }else if (obj == "Cloud"){
         cloud.forEach(service => {
             let datosComDig = document.createElement("div");
-            datosComDig.className = "comDig-data card-body border ";
+            datosComDig.className = "comDig-data card-body fs-5 border ";
             datosComDig.innerHTML = "<u>" + service.competencia + "</u>";
             
             let levelBar = document.createElement("div");
