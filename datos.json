@@ -280,7 +280,7 @@
             ]
         },
         {
-            "Gestion Contenidos": [
+            "Gestion": [
                 {
                     "ambito": "Herramientas de Gestión",
                     "competencia": "Odoo",
@@ -336,7 +336,7 @@
             ]
         },
         {
-            "Cloud Services": [
+            "Cloud": [
                 {
                     "ambito": "Cloud Computing",
                     "competencia": "Microsoft Azure",

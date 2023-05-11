@@ -236,11 +236,11 @@ function viewComPer(competencia){
 
 function viewcomDig(competencia){
 
-    const {lenguajes} = competencia.lenguajes;
-    const {herramientas} = competencia.herramientas;
-    const {gestion} = competencia.gestion;
-    const {sistemas} = competencia.sistemas;
-    const {cloud} = competencia.cloud;
+    const lenguajes = competencia.Lenguajes;
+    const herramientas = competencia.Herramientas;
+    const gestion = competencia.Gestion;
+    const sistemas = competencia.Sistemas;
+    const cloud = competencia.Cloud;
 
     
     for (var obj in competencia) {
@@ -285,7 +285,7 @@ function viewcomDig(competencia){
             comDigital.append(datosComDig);
         });
         
-       }else if (obj == "Gestion Contenidos"){
+       }else if (obj == "Gestion"){
         gestion.forEach(item => {
             let datosComDig = document.createElement("div");
             datosComDig.className = "comDig-data card-body border";
@@ -317,7 +317,7 @@ function viewcomDig(competencia){
             comDigital.append(datosComDig);
         });
         
-       }else if (obj == "Cloud Services"){
+       }else if (obj == "Cloud"){
         cloud.forEach(service => {
             let datosComDig = document.createElement("div");
             datosComDig.className = "comDig-data card-body border ";
