@@ -246,10 +246,10 @@ function viewcomDig(competencia){
     for (var obj in competencia) {
        
        var comDigital = document.createElement("div");
-       comDigital.className = "comDigital col-md-10 card d-flex flex-row flex-wrap p-3 gap-2 bg-dark text-warning";
+       comDigital.className = "comDigital col-md-10 card d-flex flex-row flex-wrap justify-content-center p-3 gap-2 bg-dark text-warning";
 
        let titleComDig = document.createElement("div");
-       titleComDig.className = "comDig-title card-title text-center";
+       titleComDig.className = "comDig-title card-title text-center ";
        titleComDig.innerHTML = obj;
        comDigital.append(titleComDig);
 
