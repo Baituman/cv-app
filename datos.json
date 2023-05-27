@@ -218,6 +218,18 @@
                     "competencia": "SQL",
                     "nivel": 3,
                     "database": []
+                },
+                {
+                    "ambito": "Lenguajes de Desarrollo",
+                    "competencia": "Python",
+                    "nivel": 2,
+                    "database": []
+                },
+                {
+                    "ambito": "Lenguajes de Desarrollo",
+                    "competencia": "R",
+                    "nivel": 1,
+                    "database": []
                 }
             ]
         },

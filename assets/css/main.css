@@ -6,10 +6,21 @@ body{
                                                 
 }
 
+.text-wrapper{
+
+    border: 20px groove #264653;
+    border-radius: 15px;
+    box-shadow: -2em 2em 5em rgb(75, 49, 2);
+    background-color: rgb(240, 169, 37);
+    
+}
 
 #ongi-etorri  p{
 
     color: #264653;
+    font-weight: 900;
+    
+    
                                                                                                 
 }
 
