@@ -110,11 +110,11 @@ function viewEduc(estudio){
     formacion.className = "formacion card";
 
     let titleEduc = document.createElement("h2");
-    titleEduc.className = "educ-title card-title bg-warning ";
+    titleEduc.className = "educ-title card-title  ";
     titleEduc.innerText = estudio.curso;
 
     let datosFormacion = document.createElement("p");
-    datosFormacion.className = "educ-data card-body bg-secondary text-white";
+    datosFormacion.className = "educ-data card-body ";
     datosFormacion.innerHTML = 
             estudio.centro + ", " + estudio.lugar +"<br />"
             + estudio.fecha;

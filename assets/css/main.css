@@ -2,34 +2,35 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background-color: #f5f5f5; /* Gris claro para el fondo */
-}
-
-.text-wrapper {
-    border: 10px solid #35495e; /* Borde gris oscuro */
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Sombra suave */
+    background-color: #fdfdfd; /* Fondo blanco puro */
+  }
+  
+  .text-wrapper {
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.05); /* Sombra suave */
     background-color: #ffffff; /* Fondo blanco para el contenido */
-    padding: 20px; /* Espacio interno */
-}
+    padding: 25px; /* Espacio interno*/
+    margin: 20px; /* Espacio externo*/
+  }
+  
+  #ongi-etorri p {
+    color: #333; /* Texto en gris oscuro */
+    font-weight: 500; /* peso de letra medio */
+  }
+  
+  #ongi-etorri h1 {
+    color: #2196F3; /* Titulo en azul brillante */
+    font-weight: 700; /* Peso de letra fuerte */
+  }
+  
+  .scrollspy-heading {
+    background-color: #4CAF50; /* Verde para los encabezados */
+    color: #ffffff; /* Texto blanco en los encabezados */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600; /* Peso de letra medio fuerte */
+  }
 
-#ongi-etorri p {
-    color: #35495e; /* Texto en gris oscuro */
-    font-weight: bold;
-}
 
-#ongi-etorri h1 {
-    color: #2c3e50; /* Titulo en azul grisáceo */
-}
 
-#scrollspyHeading1 {
-    background-color: #3498db; /* Azul para los encabezados */
-    color: white;
-}
-                                                                                                
-}
-
-#scrollspyHeading1{
-
-    background-color: #2a9d8f;
-}

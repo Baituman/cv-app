@@ -1,7 +1,7 @@
 {
     "estudios": [
         {
-            "curso": "Web Developer Grado Medio (N3)",
+            "curso": "Desarrollo de Aplicaciones en el entorno Web",
             "centro": "CIFP Txurdinaga LHII",
             "lugar": "Bilbao",
             "fecha": 2023,
@@ -13,7 +13,8 @@
             "lugar": "Birkenhead, England",
             "fecha": 2001,
             "database": []
-        },
+        }
+        ,
         {
             "curso": "HSED",
             "centro": "Iowa Educ. Dep.",
@@ -45,6 +46,30 @@
     ],
     "trabajos": [
         {
+            "cargo": "Gestor Calidad",
+            "empresa": "Mundo Escena, SL",
+            "lugar": "Madrid",
+            "desde": "2023",
+            "hasta": "2024",
+            "descripcion": "Desarrollo de soluciones de seguridad informática con la normativa ENS. Implemento arquitecturas de red segura y configuro herramientas de seguridad, sistemas web y de nube.",
+            "database": []
+        },{
+            "cargo": "Desarrollador Web",
+            "empresa": "Glocalium SL",
+            "lugar": "Bilbao",
+            "desde": "2023",
+            "hasta": "2023",
+            "descripcion": "Implantación y diseño de la pagina web www.salcys.com",
+            "database": []
+        },{
+            "cargo": "Repartidor",
+            "empresa": "Representaciones Cadagua",
+            "lugar": "Bilbao",
+            "desde": "2023",
+            "hasta": "2024",
+            "descripcion": false,
+            "database": []
+        },{
             "cargo": "Repartidor",
             "empresa": "Correos Express",
             "lugar": "Bilbao",
